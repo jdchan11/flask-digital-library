@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main class="container p-5">
+    <div class="d-flex row justify-content-center align-items-center">
+        <h2 class="d-flex justify-content-center">Sign In</h2>
+        <aside class="d-md-flex col-12 col-md-6 align-items-center justify-content-evenly">    
+            {% include 'forms.html' %}
+        </aside>
+    </div>
+</main>
+<section class="bg-light text-center">
+    <div class="container p-5">
+        <div class="row">
+            <div class="d-flex align-items-center justify-content-center">
+                <img src="../../static/images/signin_page_picture.svg" class="img-fluid p-5" 
+                    alt="person swiping up on phone lock screen">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
